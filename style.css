@@ -1,0 +1,148 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #f2eae2;
+  font-family: "Montserrat", sans-serif;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  height: 450px;
+  width: 600px;
+  max-width: 90%;
+  display: flex;
+}
+
+.image {
+  width: 50%;
+  height: 100%;
+}
+
+.image img {
+  height: 100%;
+  width: 100%;
+  border-radius: 10px 0 0 10px;
+  /*tl tr br bl*/
+}
+
+.image img.mobile {
+  display: none;
+}
+
+.content {
+  width: 50%;
+  background: #fff;
+  border-radius: 0 10px 10px 0;
+  padding: 32px;
+  box-sizing: border-box;
+}
+
+.content p:first-child {
+  font-size: 12px;
+  font-weight: 500;
+  color: #6c7289;
+  letter-spacing: 5px;
+  line-height: 15px;
+}
+
+.content h1 {
+  font-weight: 700;
+  font-size: 32px;
+  color: #1c232b;
+  line-height: 32px;
+  margin: 20px 0 24px 0; /*t r b l*/
+  font-family: "Fraunces";
+}
+
+.content .text {
+  font-size: 14px;
+  font-weight: 500;
+  color: #6c7289;
+  line-height: 23px;
+  margin-bottom: 29px;
+}
+
+.content h3 {
+  color: #3d8168;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 32px;
+  font-family: "Fraunces";
+  display: flex;
+  align-items: center;
+  gap: 19px;
+  margin-bottom: 30px;
+}
+
+.content h3 span {
+  color: #6c7289;
+  font-size: 13px;
+  font-weight: 500;
+  text-decoration: line-through;
+}
+
+.content button {
+  width: 100%;
+  height: 48px;
+  font-size: 14px;
+  font-weight: 700;
+  color: #fff;
+  background: #3d8168;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  transition: background-color 0.1s ease-in;
+}
+
+.content button:hover {
+  background: #1a4032;
+}
+
+@media (max-width: 630px) {
+  /* body {
+    height: 100%;
+    margin: 28px 0 28px 0;
+  } */
+
+  main {
+    height: 611px;
+    width: 343px;
+    display: block;
+  }
+
+  .image {
+    width: 100%;
+    height: 240px;
+  }
+
+  .image img.desktop {
+    display: none;
+  }
+
+  .image img.mobile {
+    display: block;
+    border-radius: 10px 10px 0 0;
+    /*tl tr br bl*/
+    object-fit: cover;
+  }
+
+  .content {
+    width: 100%;
+    border-radius: 0 0 10px 10px;
+    /*tl tr br bl*/
+    padding: 24px;
+  }
+}
