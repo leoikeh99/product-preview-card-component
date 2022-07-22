@@ -54,8 +54,8 @@ main {
 }
 
 .content h1 {
-  font-weight: 700;
   font-size: 32px;
+  font-weight: 700;
   color: #1c232b;
   line-height: 32px;
   margin: 20px 0 24px 0; /*t r b l*/
@@ -70,7 +70,7 @@ main {
   margin-bottom: 29px;
 }
 
-.content h3 {
+.content h2 {
   color: #3d8168;
   font-size: 32px;
   font-weight: 700;
@@ -82,7 +82,7 @@ main {
   margin-bottom: 30px;
 }
 
-.content h3 span {
+.content h2 span {
   color: #6c7289;
   font-size: 13px;
   font-weight: 500;
