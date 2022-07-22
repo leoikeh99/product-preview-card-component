@@ -112,11 +112,6 @@ main {
 }
 
 @media (max-width: 630px) {
-  /* body {
-    height: 100%;
-    margin: 28px 0 28px 0;
-  } */
-
   main {
     height: 611px;
     width: 343px;
